@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Box Shadow</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Gerador de Box Shadow</h1>
+    </header>
+    <div id="container">
+        <div id="form">
+            <h2>Controle do Box</h2>
+            <div class="opcao">
+                <div class="range-kit">
+                    <label for="horizontal">Espalhamento horizontal</label>
+                    <input type="range" value="10" min="0" max="100" id="horizontal">
+                </div>
+                <input type="text" name="" class='ref' id="horizontal_ref">
+                <p>px</p>
+            </div>
+            <div class="opcao">
+                <div class="range-kit">
+                    <label for="vertical">Espalhamento vertical</label>
+                    <input type="range" value="10" min="0" max="100" name="" id="vertical">
+                </div>
+                <input type="text" name="" class='ref' id="vertical_ref">
+                <p>px</p>
+            </div>
+            <div class="opcao">
+                <div class="range-kit">
+                    <label for="borrao">Intensidade de borrão</label>
+                    <input type="range" value="10" min="0" max="100" name="" id="borrao">
+                </div>
+                <input type="text" name="" class='ref' id="borrao_ref">
+                <p>px</p>
+            </div>
+            <div class="opcao">
+                <div class="range-kit">
+                    <label for="espalhamento">Intensidade de espalhamento</label>
+                    <input class='range' type="range"  value="10" min="0" max="50"name="" id="espalhamento">
+                </div>
+                <input type="text" name="" class='ref' id="espalhamento_ref">
+                <p>px</p>
+            </div>
+            <div class="opcao">
+                <div class="range-kit">
+                    <label for="corshadow">Cor da Shadow</label>
+                    <input type="color" class="cor" name="" id="corshadow">
+                </div>
+            </div>
+            <div class="opcao">
+                <div class="range-kit">
+                    <label for="corbox">Cor da Box</label>
+                    <input type="color" class="cor" name="" id="corbox">
+                </div>
+            </div>
+        </div>
+            
+        <div id="preview">
+            <h2>Visualização do Box</h2>
+            <div id="box">
+
+            </div>
+        </div>
+    </div>
+    <H5>Clique no campo abaixo para copiar</H5>
+    <div id="copy" onclick="copiarTexto()">
+        <div id="copy-conteudo" onclick="copiarTexto()">box-shadow: <span></span>;</div>
+    </div>
+    <footer>
+        &copy;Todos os direitos reservado a Guilherme Developer.
+    </footer>
+</body>
+</html>
